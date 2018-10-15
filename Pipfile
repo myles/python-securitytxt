@@ -4,8 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+securitytxt = {editable = true, path = "."}
 
 [dev-packages]
+pytest = "*"
+black = "*"
+"flake8" = "*"
 
 [requires]
 python_version = "3.7"
