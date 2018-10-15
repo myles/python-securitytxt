@@ -1,5 +1,15 @@
 # 🔒 Python Security.txt
 
+```python
+>>> from securitytxt import SecurityTxt
+>>>
+>>> s_txt = SecurityTxt.parse_url("https://securitytxt.org/")
+>>>
+>>> s_txt.contact
+["https://securitytxt.org/"]
+>>>
+```
+
 ## License
 
 This is free and unencumbered software released into the public domain.
