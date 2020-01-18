@@ -1,5 +1,3 @@
-import pytest
-
 TEST_SECURITY_TXT = """# If you would like to report a security issue
 # you may report it to us on HackerOne.
 Contact: https://hackerone.com/ed
