@@ -62,7 +62,7 @@ class SecurityTxt:
                 self.comments.append(line.replace("#", "").strip())
                 continue
 
-            if not ":" in line:
+            if ":" not in line:
                 continue
 
             field, value = line.split(":", 1)
