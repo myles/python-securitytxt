@@ -14,9 +14,9 @@ class DoesNotContainContactException(Exception):
 class SecurityTxt:
     FIELD_CONTACT = "contact"
     FIELD_ENCRYPTION = "encryption"
-    FIELD_ACKNOWLEDGEMENTS = "acknowledgements"
+    FIELD_ACKNOWLEDGMENTS = "acknowledgments"
 
-    FIELD_CHOICES = [FIELD_CONTACT, FIELD_ENCRYPTION, FIELD_ACKNOWLEDGEMENTS]
+    FIELD_CHOICES = [FIELD_CONTACT, FIELD_ENCRYPTION, FIELD_ACKNOWLEDGMENTS]
 
     def __init__(self, raw):
         self.raw = raw
@@ -24,7 +24,7 @@ class SecurityTxt:
         self.fields = {
             self.FIELD_CONTACT: [],
             self.FIELD_ENCRYPTION: [],
-            self.FIELD_ACKNOWLEDGEMENTS: [],
+            self.FIELD_ACKNOWLEDGMENTS: [],
         }
 
         self.comments = []
@@ -38,8 +38,8 @@ class SecurityTxt:
         return self.fields[self.FIELD_ENCRYPTION]
 
     @property
-    def acknowledgements(self):
-        return self.fields[self.FIELD_ACKNOWLEDGEMENTS]
+    def acknowledgments(self):
+        return self.fields[self.FIELD_ACKNOWLEDGMENTS]
 
     def parse(self):
         if isinstance(self.raw, bytes):
